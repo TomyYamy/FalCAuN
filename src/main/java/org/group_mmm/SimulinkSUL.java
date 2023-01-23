@@ -184,9 +184,9 @@ class SimulinkSUL implements SUL<List<Double>, IOSignalPiece> {
 
         /// Configuration on the accelerator
         // Use normal mode
-        // builder.append("set_param(mdl,'SimulationMode','normal');");
+        builder.append("set_param(mdl,'SimulationMode','normal');");
         // Enable accelerator mode
-        builder.append("set_param(mdl,'SimulationMode','accelerator');");
+        // builder.append("set_param(mdl,'SimulationMode','accelerator');");
         // Enable classic accelerator mode
         builder.append("set_param(0, 'GlobalUseClassicAccelMode', 'on');");
 
